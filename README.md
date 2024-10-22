@@ -14,6 +14,10 @@
 - open a terminal
 - Install LeafPad,a simple text editor by running the following command<br>
 ``` bash
-sudo-get install leafpad <br/>#
-## enter cd in the comand
-
+sudo-get install leafpad <br/>
+```
+-To navigate your file directory,use the command
+```bash
+cd
+```
+-
