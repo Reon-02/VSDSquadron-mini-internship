@@ -1,7 +1,7 @@
 # VSDSquadron-mini-internship
 ## INSTRUCTOR:Kunal Gosh
 ## Objectives
-### 1:To wirte a C program to calculate the sum of numbers and to verify it using appropriate commands.
+### 1:To write a C program to calculate the sum of numbers and to verify it using appropriate commands.
 ### 2:Compile the same code using the RISC-V compiler to generate its assembly code. Then, evaluate the RISC-V assembly code for the sample C program by using two different compilation options.
 ## Project Setup
 - Install virtualbox
@@ -13,4 +13,4 @@
 ## Task 1: Write and complile a c program 
 - open a terminal
 - Install LeafPad,a simple text editor by running the following command<br>
-  ```bash sudo apt-get install leafpad
+$    sudo apt install leafpad <br/>
