@@ -12,5 +12,6 @@
 - Start the machine
 ## Task 1: Write and complile a c program 
 - open a terminal
-- Install LeadPad,a simple text editor by running the following command<br>
-  $ sudo apt-get install leafpad
+- Install LeafPad,a simple text editor by running the following command<br>
+  ```bash
+sudo apt-get install leafpad
