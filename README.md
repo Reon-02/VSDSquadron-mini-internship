@@ -16,6 +16,15 @@
 ``` bash
 sudo-get install leafpad <br/>
 ```
+-To navigate to the home directory,enter the following command
+```bash 
+cd
+```
+-To open a blank file for typing C program,enter the following command
+```bash
+leadfpad sum1ton.c
+```
+
 
 
 
