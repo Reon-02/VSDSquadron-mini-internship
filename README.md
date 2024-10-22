@@ -14,4 +14,4 @@
 - open a terminal
 - Install LeafPad,a simple text editor by running the following command<br>
 ``` bash
-sudo apt install leafpad <br/>
+sudo-get install leafpad <br/>
