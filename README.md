@@ -1,2 +1,2 @@
-### VSDSquadron-mini-internship
+# VSDSquadron-mini-internship
 ## Instructor:Kunal Gosh
