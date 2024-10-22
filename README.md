@@ -20,6 +20,5 @@ sudo-get install leafpad <br/>
 ```bash
 cd
 ```
-
 ![image](C:/Users/Reon Dantis/OneDrive/Desktop/Pictures/Screenshots)
 
