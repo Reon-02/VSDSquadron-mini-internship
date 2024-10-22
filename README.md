@@ -18,7 +18,7 @@ sudo-get install leafpad <br/>
 ```
 
 
-![IMG-20241010-WA0031](https://github.com/user-attachments/assets/fbeca4f1-51d2-4895-9462-8853fe9e6783)
+![Screenshot 2024-10-21 193720](https://github.com/user-attachments/assets/6b1041a8-eeeb-439a-a06f-48e6099a0198)
 
 
 
