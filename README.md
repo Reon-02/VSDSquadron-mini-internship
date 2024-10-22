@@ -24,8 +24,7 @@ cd
 ```bash
 leadfpad sum1ton.c
 ```
-![Screenshot 2024-10-21 193720](https://github.com/user-attachments/assets/640d1d01-c3a2-4f8b-a9e3-00b4b71aaff6)
-
+![Screenshot 2024-10-21 193720](https://github.com/user-attachments/assets/8b1ea13d-28c0-4e9c-9114-54707735c60b)
 
 
 
