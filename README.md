@@ -13,4 +13,5 @@
 ## Task 1: Write and complile a c program 
 - open a terminal
 - Install LeafPad,a simple text editor by running the following command<br>
-``` bash sudo apt install leafpad <br/>
+``` bash
+sudo apt install leafpad <br/>
