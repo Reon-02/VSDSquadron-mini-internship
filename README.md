@@ -16,11 +16,10 @@
 ``` bash
 sudo-get install leafpad <br/>
 ```
--To navigate your file directory,use the command
-```bash
+
 
 ![IMG-20241010-WA0031](https://github.com/user-attachments/assets/fbeca4f1-51d2-4895-9462-8853fe9e6783)
 
-```
+
 
 
