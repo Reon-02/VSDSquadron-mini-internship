@@ -20,4 +20,6 @@ sudo-get install leafpad <br/>
 ```bash
 cd
 ```
--
+<centre>
+![Alt text](C:/Users/Reon Dantis/OneDrive/Desktop/Pictures/Screenshots)
+</centre>
