@@ -51,13 +51,13 @@ cat sum1ton.c
 riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
 ls -ltr sum1ton.o
 ```
-img
+![Screenshot from 2024-10-23 20-24-15](https://github.com/user-attachments/assets/84aba6ea-6603-4bb1-9c7f-928219be2695)
 ### Step:3
 - Create a new tab and enter the following command to generate the assembly code
 ```bash
 riscv64 -unknown-elf-onjdump-d sum1ton.o
 ```
-IMg<br>
+![Screenshot from 2024-10-23 20-26-16](https://github.com/user-attachments/assets/2ab9c361-f074-4b24-8d48-9dd9cff65fa8)
 - the system will generate huge assembly code
 - to get the main parts of the program, enter the following command
 ```bash
