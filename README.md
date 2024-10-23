@@ -10,7 +10,7 @@
 - Select Linux as the operating system and under version choose Ubuntu 18.04
 - Attach th VDI files to the machine
 - Start the machine
-## Task 1: Write and complile a c program 
+##  Task 1: Write and complile a c program 
 - open a terminal
 - Install LeafPad,a simple text editor by running the following command<br>
 ``` bash
@@ -38,14 +38,14 @@ gcc sum1ton.c
 
 ![Screenshot from 2024-10-23 17-58-22](https://github.com/user-attachments/assets/b9f4dd62-28e7-4a34-8a6f-3cf89823f2d2)
 
-##Task 2:To compile the previous code using RISC-V compiler 
-###Step:1
+##  Task 2:To compile the previous code using RISC-V compiler 
+### Step:1
 -To display the content of the previous code in the terminal,use the following command
 ```bash
 cat sum1ton.c
 ```
 ![Screenshot from 2024-10-21 19-19-04 - 3](https://github.com/user-attachments/assets/4de3e364-be40-4e2d-af7b-18b75c4a369a)
-###Step:2
+### Step:2
 -TO run the previous code using RISC-V compiler,enter the following command
 
 
