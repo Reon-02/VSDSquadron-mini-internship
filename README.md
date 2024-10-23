@@ -16,43 +16,47 @@
 ``` bash
 sudo-get install leafpad 
 ```
--To navigate to the home directory,enter the following command
+- To navigate to the home directory,enter the following command
 ```bash 
 cd
 ```
--To open a blank file for typing C program,enter the following command
+- To open a blank file for typing C program,enter the following command
 ```bash
 leadfpad sum1ton.c
 ```
 ![Screenshot from 2024-10-23 00-24-08](https://github.com/user-attachments/assets/4817ccc5-8ed1-47d5-b548-e953a3ec52aa)
 
--After writing the program,save it and return to the terminal and enter the following command
+- After writing the program,save it and return to the terminal and enter the following command
 ```bash
 gcc sum1ton.c
 ./a.out
 ```
 ![Screenshot from 2024-10-23 18-04-21](https://github.com/user-attachments/assets/37976102-6f90-4cc3-a6ef-f7182a7340d8)
--verify the result using a calculator <br>
--after verifying it go back to the editor and check the result for different values of n<br>
--recompile it and verify the output
+- verify the result using a calculator <br>
+- after verifying it go back to the editor and check the result for different values of n<br>
+- recompile it and verify the output
 
 ![Screenshot from 2024-10-23 17-58-22](https://github.com/user-attachments/assets/b9f4dd62-28e7-4a34-8a6f-3cf89823f2d2)
 
 ##  Task 2:To compile the C code using RISC-V compiler 
 ### Step:1
--To display the content of the C code in the terminal,use the following command
+- To display the content of the C code in the terminal,use the following command
 ```bash
 cat sum1ton.c
 ```
 ![Screenshot from 2024-10-23 18-20-39](https://github.com/user-attachments/assets/b1f63152-e60f-408e-af26-3a4381350fcb)
 ### Step:2
--TO run the C code using RISC-V compiler and to generate the object file,enter the following command 
+- To run the C code using RISC-V compiler and to generate the object file,enter the following command 
 ```bash
 riscv64 -unknown -elf -gcc -01 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
 ls -ltr sum1ton.o
 ```
 ![Screenshot from 2024-10-21 19-19-04 - 3](https://github.com/user-attachments/assets/4de3e364-be40-4e2d-af7b-18b75c4a369a)
-
+###Step:3
+- Create a new tab and enter the following command to generate the assembly code
+```bash
+riscv64 -unknown-elf-onjdump-d sum1ton.c
+```
 
 
 
