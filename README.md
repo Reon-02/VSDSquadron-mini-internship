@@ -24,13 +24,15 @@ cd
 ```bash
 leadfpad sum1ton.c
 ```
-image
+![Screenshot from 2024-10-23 00-24-08](https://github.com/user-attachments/assets/4817ccc5-8ed1-47d5-b548-e953a3ec52aa)
+
 -After writing the program,save it and return to the terminal and enter the following command
 ```bash
 gcc sum1ton.c
 ./a.out
 ```
-image<br>
+![Screenshot from 2024-10-23 17-58-22](https://github.com/user-attachments/assets/b9f4dd62-28e7-4a34-8a6f-3cf89823f2d2)
+
 -Check the result using a calculator <br>
 -after verifying go back to the editor <br>
 -change the values of n <br>
