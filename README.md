@@ -10,7 +10,7 @@
 - Select Linux as the operating system and under version choose Ubuntu 18.04
 - Attach th VDI files to the machine
 - Start the machine
-##  Task 1: Write and complile a c program 
+##  Task 1: Write and complile a C program 
 - open a terminal
 - Install LeafPad,a simple text editor by running the following command<br>
 ``` bash
