@@ -48,10 +48,10 @@ cat sum1ton.c
 ### Step:2
 - To run the C code using RISC-V compiler and to generate the object file,enter the following command 
 ```bash
-riscv64 -unknown -elf -gcc -01 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
+riscv64 -unknown -elf -gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
 ls -ltr sum1ton.o
 ```
-![Screenshot from 2024-10-21 19-19-04 - 3](https://github.com/user-attachments/assets/4de3e364-be40-4e2d-af7b-18b75c4a369a)
+![Screenshot from 2024-10-23 19-32-01](https://github.com/user-attachments/assets/35b19bb3-35ba-4f4a-aad9-2c4f8297b053)
 ###Step:3
 - Create a new tab and enter the following command to generate the assembly code
 ```bash
