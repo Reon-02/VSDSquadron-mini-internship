@@ -25,13 +25,16 @@ cd
 leadfpad sum1ton.c
 ```
 image
-# After writing the program,save it and return to the terminal and enter the following command
+-After writing the program,save it and return to the terminal and enter the following command
 ```bash
 gcc sum1ton.c
 ./a.out
 ```
-image
--Check the result using a calculator
+image<br>
+-Check the result using a calculator 
+-after verifying go back to the editor 
+-change the values of n 
+-recompile and verify it .
 
 
 
