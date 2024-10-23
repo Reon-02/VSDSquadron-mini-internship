@@ -44,13 +44,14 @@ gcc sum1ton.c
 ```bash
 cat sum1ton.c
 ```
-![Screenshot from 2024-10-21 19-19-04 - 3](https://github.com/user-attachments/assets/4de3e364-be40-4e2d-af7b-18b75c4a369a)
+img
 ### Step:2
--TO run the C code using RISC-V compiler,enter the following command
+-TO run the C code using RISC-V compiler and to generate the object file,enter the following command 
 ```bash
 riscv64 -unknown -elf -gcc -01 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
+ls -ltr sum1ton.o
 ```
-
+![Screenshot from 2024-10-21 19-19-04 - 3](https://github.com/user-attachments/assets/4de3e364-be40-4e2d-af7b-18b75c4a369a)
 
 
 
