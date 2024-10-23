@@ -44,7 +44,7 @@ gcc sum1ton.c
 ```bash
 cat sum1ton.c
 ```
-img
+![Screenshot from 2024-10-23 18-20-39](https://github.com/user-attachments/assets/b1f63152-e60f-408e-af26-3a4381350fcb)
 ### Step:2
 -TO run the C code using RISC-V compiler and to generate the object file,enter the following command 
 ```bash
