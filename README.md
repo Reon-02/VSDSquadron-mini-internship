@@ -51,7 +51,7 @@ cat sum1ton.c
 riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
 ls -ltr sum1ton.o
 ```
-![Screenshot from 2024-10-23 19-32-01](https://github.com/user-attachments/assets/35b19bb3-35ba-4f4a-aad9-2c4f8297b053)
+img
 ### Step:3
 - Create a new tab and enter the following command to generate the assembly code
 ```bash
