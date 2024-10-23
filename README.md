@@ -31,10 +31,11 @@ gcc sum1ton.c
 ./a.out
 ```
 image<br>
--Check the result using a calculator 
--after verifying go back to the editor 
--change the values of n 
--recompile and verify it .
+-Check the result using a calculator <br>
+-after verifying go back to the editor <br>
+-change the values of n <br>
+-recompile and verify it .<br>
+
 
 
 
