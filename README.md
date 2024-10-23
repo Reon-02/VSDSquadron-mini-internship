@@ -24,6 +24,14 @@ cd
 ```bash
 leadfpad sum1ton.c
 ```
+image
+# After writing the program,save it and return to the terminal and enter the following command
+```bash
+gcc sum1ton.c
+./a.out
+```
+image
+-Check the result using a calculator
 
 
 
