@@ -58,7 +58,7 @@ ls -ltr sum1ton.o
 riscv64 -unknown-elf-onjdump-d sum1ton.o
 ```
 IMg<br>
-- the system will generate huge assembly
+- the system will generate huge assembly code
 - to get the main parts of the program, enter the following command
 ```bash
 riscv64 -unknown-elf-objdump -d sum1ton.o | less
