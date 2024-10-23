@@ -31,10 +31,9 @@ leadfpad sum1ton.c
 gcc sum1ton.c
 ./a.out
 ```
-image
-
--Check the result using a calculator <br>
--after verifying go back to the editor and change the values of n<br>
+![Screenshot from 2024-10-23 18-04-21](https://github.com/user-attachments/assets/37976102-6f90-4cc3-a6ef-f7182a7340d8)
+-verify the result using a calculator <br>
+-after verifying it go back to the editor and check the result for different values of n<br>
 -recompile it and verify the output
 
 ![Screenshot from 2024-10-23 17-58-22](https://github.com/user-attachments/assets/b9f4dd62-28e7-4a34-8a6f-3cf89823f2d2)
