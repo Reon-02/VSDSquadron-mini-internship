@@ -63,22 +63,22 @@ riscv64 -unknown-elf-onjdump-d sum1ton.o
 ```bash
 riscv64 -unknown-elf-objdump -d sum1ton.o | less
 ```
-img
+![Screenshot from 2024-10-23 20-27-01](https://github.com/user-attachments/assets/9e3ac1e7-07bb-446f-a2cd-db782070ab32)
 ### step:4
 - to focus on the main code , enter the following command and press"n"
 ```bash
 /main
 ```
-img
+![Screenshot from 2024-10-23 20-28-15](https://github.com/user-attachments/assets/1ebcfcd6-220e-4e32-a36e-4f53f62a78a3)
 - count the number of instructions and verify a programmable calculator
-img
 ### step:5
 - return to the terminal and enter the following command
 ```bash
 riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
 ```
 - repeat the steps 3&4
-  img
+![Screenshot from 2024-10-23 20-31-40](https://github.com/user-attachments/assets/47e45154-cf90-48d7-80ca-aade2e0cf9a8)
+
 
 
 
