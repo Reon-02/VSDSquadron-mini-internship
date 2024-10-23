@@ -70,7 +70,7 @@ riscv64 -unknown-elf-objdump -d sum1ton.o | less
 /main
 ```
 ![Screenshot from 2024-10-23 20-28-15](https://github.com/user-attachments/assets/1ebcfcd6-220e-4e32-a36e-4f53f62a78a3)
-- count the number of instructions and verify a programmable calculator
+- count the number of instructions and verify using programmable calculator
 ### step:5
 - return to the terminal and enter the following command
 ```bash
