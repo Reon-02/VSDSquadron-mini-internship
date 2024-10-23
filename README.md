@@ -48,17 +48,37 @@ cat sum1ton.c
 ### Step:2
 - To run the C code using RISC-V compiler and to generate the object file,enter the following command 
 ```bash
-riscv64 -unknown -elf -gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
+riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
 ls -ltr sum1ton.o
 ```
 ![Screenshot from 2024-10-23 19-32-01](https://github.com/user-attachments/assets/35b19bb3-35ba-4f4a-aad9-2c4f8297b053)
-###Step:3
+### Step:3
 - Create a new tab and enter the following command to generate the assembly code
 ```bash
-riscv64 -unknown-elf-onjdump-d sum1ton.c
+riscv64 -unknown-elf-onjdump-d sum1ton.o
 ```
-
-
+IMg<br>
+- the system will generate huge assembly
+- to get the main parts of the program, enter the following command
+```bash
+riscv64 -unknown-elf-objdump -d sum1ton.o | less
+```
+img
+### step:4
+- to focus on the main code , enter the following command and press"n"
+```bash
+/main
+```
+img
+- count the number of instructions and verify a programmable calculator
+img
+### step:5
+- return to the terminal and enter the following command
+```bash
+riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
+```
+- repeat the steps 3&4
+  img
 
 
 
