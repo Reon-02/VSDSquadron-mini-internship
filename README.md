@@ -1,6 +1,5 @@
 # VSDSquadron-mini-internship
 ## INSTRUCTOR:Kunal Gosh
-<details>
 ## LAB:1
 ## Objectives
 ### 1:To write a C program to calculate the sum of numbers and to verify it using appropriate commands.
