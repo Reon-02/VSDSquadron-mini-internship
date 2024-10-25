@@ -11,7 +11,6 @@
 - Attach th VDI files to the machine
 - Start the machine
 ##  Task 1: Write and complile a C program 
-<summary><h3>Task 1: </h3> 
 - open a terminal
 - Install LeafPad,a simple text editor by running the following command<br>
 ``` bash
