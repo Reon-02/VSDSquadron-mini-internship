@@ -2,9 +2,9 @@
 ## INSTRUCTOR:Kunal Gosh
 ## LAB:1
 <details>
-## Objectives
-### 1:To write a C program to calculate the sum of numbers and to verify it using appropriate commands.
-### 2:Compile the same code using the RISC-V compiler to generate its assembly code. Then, evaluate the RISC-V assembly code for the sample C program by using two different compilation options.
+## Objectives<br>
+### 1:To write a C program to calculate the sum of numbers and to verify it using appropriate commands.<br>
+### 2:Compile the same code using the RISC-V compiler to generate its assembly code. Then, evaluate the RISC-V assembly code for the sample C program by using two different compilation options.<br>
 ## Project Setup
 - Install virtualbox
 - Launch the Virual box
