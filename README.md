@@ -97,6 +97,54 @@ riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
   }
 ```
 ![1](https://github.com/user-attachments/assets/fb3a7119-249e-456d-881d-eeaf20640a7c)
+## Step:2
+- Compile the code using the RISC-V compiler with the following command.
+```bash
+riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.c sum1ton.o
+```
+## Step:3
+- Execute on spike with the following command
+- This should yield the same results as before, verifying that the instructions are functioning correctly.
+```bash
+spike pk sum1ton.o
+```
+![2](https://github.com/user-attachments/assets/a21f3a5b-d6f9-401e-998d-302d0565dc56)
+## Step:4
+- First, open the objdump of the file using the following command.
+```bash
+riscv64-unknown-elf-objdump -d -sum1ton.o
+riscv64-unknown-elf-objdump -d -sum1ton.o | less
+```
+![3](https://github.com/user-attachments/assets/a00aec28-076f-4879-80da-0ddd6c4822c1)
+- To debug the assembly code, using Spike
+```bash
+spike -d pk sum1ton.o
+```
+## Step:5
+### Set Prograam Counter for Debugging
+- To start debugging from a specific address, check the initial memory location of the first instruction.
+![3](https://github.com/user-attachments/assets/5fd5c96d-c2f7-4589-90d9-9cc36b39e919)
+-As indicated in the highlighted code above, this is the initial memory location of the first instruction
+- The command ```bash "until pc 0 bc100" ```is used to run the program counter until it reaches the first instruction
+- ![4](https://github.com/user-attachments/assets/b3c445b9-1f3c-482d-acaf-9199e549ccc1)
+## Step:6
+### Inspect Register A2 Before and After Execution
+-To find the content of a2, use the following command 
+```bash
+reg 0 a2
+```
+- It will start from the zero bit and press enter to run the next instruction
+![5](https://github.com/user-attachments/assets/c2257b91-7bd3-4795-a75b-3800c5688c0f)
+- run the following command to get the content o of a2
+```bash
+reg 0 a2
+```
+![1](https://github.com/user-attachments/assets/5c064994-2a03-4613-aab8-4c1cb6e9de2d)
+- Press enter to load the next instruction
+- 
+
+  
+  
 
 
 
