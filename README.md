@@ -153,6 +153,18 @@ reg 0 a0
 reg 0 sp
 ```
 ![1](https://github.com/user-attachments/assets/50cc8766-3694-496a-bdb3-683101776b99)
+- The "addi" instruction updates the stack pointer by adding an immediate value to it.
+- the command "addi sp,sp,16 decreases the stack pointer by 16 in decimal or 10 in hexadecimal
+### Step:6
+-quit and enter the command
+```bash
+spike -d pk sum1ton.o
+until pc 0 100b8
+reg 0 b8
+```
+![2](https://github.com/user-attachments/assets/227ef06d-0f58-4d57-bd9c-e3dfbcffbde5)
+
+  
 
 
 
