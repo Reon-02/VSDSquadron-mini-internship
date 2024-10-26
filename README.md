@@ -80,6 +80,14 @@ riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
 - repeat the steps 3&4
 ![Screenshot from 2024-10-23 20-31-40](https://github.com/user-attachments/assets/47e45154-cf90-48d7-80ca-aade2e0cf9a8)
 
+## LAB 03: Debugging RISC-V Assembly Program
+### Objectives
+- To compile and debug a  C code in RISC-V and verify its output.
+## Step:1
+```bash
+
+
+
 
 
 
