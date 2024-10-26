@@ -141,7 +141,20 @@ reg 0 a2
 ```
 ![1](https://github.com/user-attachments/assets/5c064994-2a03-4613-aab8-4c1cb6e9de2d)
 - Press enter to load the next instruction
-- 
+ ![2](https://github.com/user-attachments/assets/1884e55e-eb52-4f6a-a9ee-8672c571bce5)
+-enter the following command and press enter to load the next instruction
+```bash
+reg 0 a0
+```
+![4](https://github.com/user-attachments/assets/84780367-c11a-4135-9d17-dd21b92aada6)
+
+-To retrieve the content of the stack pointer, enter the following command:
+```bash
+reg 0 sp
+```
+![1](https://github.com/user-attachments/assets/50cc8766-3694-496a-bdb3-683101776b99)
+
+
 
   
   
