@@ -163,6 +163,18 @@ until pc 0 100b8
 reg 0 b8
 ```
 ![2](https://github.com/user-attachments/assets/227ef06d-0f58-4d57-bd9c-e3dfbcffbde5)
+-enter the following command to look into stack pointer
+```bash
+reg 0 sp
+```
+-Using a calculator to confirm
+```bash
+0xffffffb50 - 0x10 = 0xffffffb40
+```
+![Screenshot 2024-10-27 001322](https://github.com/user-attachments/assets/f3cf95d6-4555-4b00-8b77-182c611fd642)
+- the result confirms that the command successfully decrements the stack pointer register by 0*10.
+
+
 
   
 
