@@ -84,7 +84,21 @@ riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
 ### Objectives
 - To compile and debug a  C code in RISC-V and verify its output.
 ## Step:1
+- Compile the following C code in the terminal
 ```bash
+  #include<stdio.h>
+  int main(){
+  int i,sum=0,n=100;
+  for(i=1;i<=n;++i){
+  sum+=i;
+  }
+  printf("sum of numbers from 1  to %d is %d\n",n,sum);
+  return 0;
+  }
+```
+![1](https://github.com/user-attachments/assets/fb3a7119-249e-456d-881d-eeaf20640a7c)
+
+
 
 
 
