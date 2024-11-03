@@ -174,7 +174,7 @@ reg 0 sp
 ![Screenshot 2024-10-27 001322](https://github.com/user-attachments/assets/f3cf95d6-4555-4b00-8b77-182c611fd642)
 - the result confirms that the command successfully decrements the stack pointer register by 0*10.
 
-
+### LAB:03
 
   
 
