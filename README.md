@@ -182,15 +182,71 @@ reg 0 sp
 
 #### 3) Identify exact 32-bit instruction code in the instruction type format for 15 unique instructions
 
-#### 4) Upload the 32-bit pattern on Github"
+### Task:1
+## - To list various RISC-V instruction types
+- RISC-V (Reduced Instruction Set Computer - V) instructions are the set of commands used in RISC-V processors to perform various operations, including arithmetic, data movement, control flow, and more. RISC-V instructions are designed to be simple, modular, and extensible, making it easy to customize for specific applications or add new features.
+- RISC-V instructions are divided into different categories based on functionality.
+- 
+### 1. R-Type (Register-Register)
+Purpose: Used for arithmetic and logical operations between two registers.
+Format: opcode | rd | funct3 | rs1 | rs2 | funct7
+Fields:
+opcode: Operation type (7 bits)
+rd: Destination register (5 bits)
+funct3: Specifies the function (3 bits)
+rs1: First source register (5 bits)
+rs2: Second source register (5 bits)
+funct7: Additional function code (7 bits)
 
-  
+
+2. I-Type (Immediate)
+Purpose: Used for operations involving an immediate value (constant), such as load and arithmetic with constants.
+Format: opcode | rd | funct3 | rs1 | immediate
+Fields:
+opcode: Operation type (7 bits)
+rd: Destination register (5 bits)
+funct3: Specifies the operation (3 bits)
+rs1: Source register (5 bits)
+immediate: Immediate value (12 bits, sign-extended)
 
 
+3. S-Type (Store)
+Purpose: Used for store operations, writing data from a register to memory.
+Format: opcode | immediate[4:0] | funct3 | rs1 | rs2 | immediate[11:5]
+Fields:
+opcode: Operation type (7 bits)
+funct3: Specifies the store type (3 bits)
+rs1: Base address register (5 bits)
+rs2: Source register to store (5 bits)
+immediate: Split into two parts to form a 12-bit address offset (5+7 bits)
 
-  
-  
 
+4. B-Type (Branch)
+Purpose: Used for conditional branching, changing control flow based on comparisons.
+Format: opcode | immediate[11] | immediate[4:1] | funct3 | rs1 | rs2 | immediate[10:5]
+Fields:
+opcode: Operation type (7 bits)
+funct3: Specifies the branch condition (3 bits)
+rs1, rs2: Registers to compare (5 bits each)
+immediate: Split into multiple parts, sign-extended to 13 bits to specify the branch offset
+Examples: BEQ, BNE, BLT, BGE
+
+5. U-Type (Upper Immediate)
+Purpose: Used to handle large immediate values, mainly for setting the upper 20 bits of a register.
+Format: opcode | rd | immediate[31:12]
+Fields:
+opcode: Operation type (7 bits)
+rd: Destination register (5 bits)
+immediate: Immediate value, upper 20 bits (20 bits)
+
+
+6. J-Type (Jump)
+Purpose: Used for unconditional jumps, typically for function calls.
+Format: opcode | rd | immediate[20 | 10:1 | 11 | 19:12]
+Fields:
+opcode: Operation type (7 bits)
+rd: Register to store the return address (5 bits)
+immediate: 20-bit offset, sign-extended and reordered to specify the jump target address
 
 
 
