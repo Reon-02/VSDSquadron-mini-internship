@@ -239,7 +239,6 @@ opcode: Operation type (7 bits)
 rd: Destination register (5 bits)
 immediate: Immediate value, upper 20 bits (20 bits)
 
-
 6. J-Type (Jump)
 Purpose: Used for unconditional jumps, typically for function calls.
 Format: opcode | rd | immediate[20 | 10:1 | 11 | 19:12]
@@ -248,6 +247,12 @@ opcode: Operation type (7 bits)
 rd: Register to store the return address (5 bits)
 immediate: 20-bit offset, sign-extended and reordered to specify the jump target address
 
+
+2) Identify 15 unique RISC-V instructions from riscv-objdmp of your application code 
+
+3) Identify exact 32-bit instruction code in the instruction type format for 15 unique instructions
+
+4) Upload the 32-bit pattern on Github"
 
 
 
