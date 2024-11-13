@@ -199,7 +199,7 @@ rs2: Second source register (5 bits)
 funct7: Additional function code (7 bits)
 
 
-2. I-Type (Immediate)
+## 2. I-Type (Immediate)
 Purpose: Used for operations involving an immediate value (constant), such as load and arithmetic with constants.
 Format: opcode | rd | funct3 | rs1 | immediate
 Fields:
@@ -210,7 +210,7 @@ rs1: Source register (5 bits)
 immediate: Immediate value (12 bits, sign-extended)
 
 
-3. S-Type (Store)
+## 3. S-Type (Store)
 Purpose: Used for store operations, writing data from a register to memory.
 Format: opcode | immediate[4:0] | funct3 | rs1 | rs2 | immediate[11:5]
 Fields:
@@ -221,7 +221,7 @@ rs2: Source register to store (5 bits)
 immediate: Split into two parts to form a 12-bit address offset (5+7 bits)
 
 
-4. B-Type (Branch)
+## 4. B-Type (Branch)
 Purpose: Used for conditional branching, changing control flow based on comparisons.
 Format: opcode | immediate[11] | immediate[4:1] | funct3 | rs1 | rs2 | immediate[10:5]
 Fields:
@@ -231,7 +231,7 @@ rs1, rs2: Registers to compare (5 bits each)
 immediate: Split into multiple parts, sign-extended to 13 bits to specify the branch offset
 Examples: BEQ, BNE, BLT, BGE
 
-5. U-Type (Upper Immediate)
+## 5. U-Type (Upper Immediate)
 Purpose: Used to handle large immediate values, mainly for setting the upper 20 bits of a register.
 Format: opcode | rd | immediate[31:12]
 Fields:
@@ -239,7 +239,7 @@ opcode: Operation type (7 bits)
 rd: Destination register (5 bits)
 immediate: Immediate value, upper 20 bits (20 bits)
 
-6. J-Type (Jump)
+## 6. J-Type (Jump)
 Purpose: Used for unconditional jumps, typically for function calls.
 Format: opcode | rd | immediate[20 | 10:1 | 11 | 19:12]
 Fields:
@@ -248,11 +248,7 @@ rd: Register to store the return address (5 bits)
 immediate: 20-bit offset, sign-extended and reordered to specify the jump target address
 
 
-2) Identify 15 unique RISC-V instructions from riscv-objdmp of your application code 
 
-3) Identify exact 32-bit instruction code in the instruction type format for 15 unique instructions
-
-4) Upload the 32-bit pattern on Github"
 
 
 
