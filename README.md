@@ -244,7 +244,7 @@ reg 0 sp
 #### Fields:
 - opcode: Operation type (7 bits)
 rd: Register to store the return address (5 bits)
-immediate: 20-bit offset, sign-extended and reordered to specify the jump target address
+immediate: 20-bit offset, sign-extended and reordered to specify the jump target address.
 
 
 
