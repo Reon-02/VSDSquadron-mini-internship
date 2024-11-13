@@ -188,62 +188,61 @@ reg 0 sp
 - RISC-V instructions are divided into different categories based on functionality.
 - 
 ### 1. R-Type (Register-Register)
-Purpose: Used for arithmetic and logical operations between two registers.
-Format: opcode | rd | funct3 | rs1 | rs2 | funct7
-Fields:
-opcode: Operation type (7 bits)
-rd: Destination register (5 bits)
-funct3: Specifies the function (3 bits)
-rs1: First source register (5 bits)
-rs2: Second source register (5 bits)
-funct7: Additional function code (7 bits)
+- Purpose: Used for arithmetic and logical operations between two registers.<br>
+- Format: opcode | rd | funct3 | rs1 | rs2 | funct7<br>
+#### Fields:<br>
+- opcode: Operation type (7 bits)<br>
+- rd: Destination register (5 bits)<br>
+- funct3: Specifies the function (3 bits)<br>
+- rs1: First source register (5 bits)<br>
+- rs2: Second source register (5 bits)<br>
+- funct7: Additional function code (7 bits)<br>
 
 
-## 2. I-Type (Immediate)
-Purpose: Used for operations involving an immediate value (constant), such as load and arithmetic with constants.
-Format: opcode | rd | funct3 | rs1 | immediate
-Fields:
-opcode: Operation type (7 bits)
-rd: Destination register (5 bits)
-funct3: Specifies the operation (3 bits)
-rs1: Source register (5 bits)
-immediate: Immediate value (12 bits, sign-extended)
+### 2. I-Type (Immediate)
+- Purpose: Used for operations involving an immediate value (constant), such as load and arithmetic with constants.
+- Format: opcode | rd | funct3 | rs1 | immediate
+#### Fields:
+- opcode: Operation type (7 bits)
+- rd: Destination register (5 bits)
+- funct3: Specifies the operation (3 bits)
+- rs1: Source register (5 bits)
+- immediate: Immediate value (12 bits, sign-extended)
 
 
-## 3. S-Type (Store)
-Purpose: Used for store operations, writing data from a register to memory.
-Format: opcode | immediate[4:0] | funct3 | rs1 | rs2 | immediate[11:5]
-Fields:
-opcode: Operation type (7 bits)
-funct3: Specifies the store type (3 bits)
-rs1: Base address register (5 bits)
-rs2: Source register to store (5 bits)
-immediate: Split into two parts to form a 12-bit address offset (5+7 bits)
+### 3. S-Type (Store)
+- Purpose: Used for store operations, writing data from a register to memory.
+- Format: opcode | immediate[4:0] | funct3 | rs1 | rs2 | immediate[11:5]
+ #### Fields:
+- opcode: Operation type (7 bits)
+- funct3: Specifies the store type (3 bits)
+- rs1: Base address register (5 bits)
+- rs2: Source register to store (5 bits)
+- immediate: Split into two parts to form a 12-bit address offset (5+7 bits) 
 
 
-## 4. B-Type (Branch)
-Purpose: Used for conditional branching, changing control flow based on comparisons.
-Format: opcode | immediate[11] | immediate[4:1] | funct3 | rs1 | rs2 | immediate[10:5]
-Fields:
-opcode: Operation type (7 bits)
-funct3: Specifies the branch condition (3 bits)
-rs1, rs2: Registers to compare (5 bits each)
-immediate: Split into multiple parts, sign-extended to 13 bits to specify the branch offset
-Examples: BEQ, BNE, BLT, BGE
+### 4. B-Type (Branch)
+- Purpose: Used for conditional branching, changing control flow based on comparisons.
+- Format: opcode | immediate[11] | immediate[4:1] | funct3 | rs1 | rs2 | immediate[10:5]
+#### Fields:
+- opcode: Operation type (7 bits)
+- funct3: Specifies the branch condition (3 bits)
+- rs1, rs2: Registers to compare (5 bits each)
+- immediate: Split into multiple parts, sign-extended to 13 bits to specify the branch offset
 
-## 5. U-Type (Upper Immediate)
-Purpose: Used to handle large immediate values, mainly for setting the upper 20 bits of a register.
-Format: opcode | rd | immediate[31:12]
-Fields:
-opcode: Operation type (7 bits)
-rd: Destination register (5 bits)
-immediate: Immediate value, upper 20 bits (20 bits)
+### 5. U-Type (Upper Immediate)
+- Purpose: Used to handle large immediate values, mainly for setting the upper 20 bits of a register.
+- Format: opcode | rd | immediate[31:12]
+#### Fields:
+- opcode: Operation type (7 bits)
+- rd: Destination register (5 bits)
+- immediate: Immediate value, upper 20 bits (20 bits)
 
-## 6. J-Type (Jump)
-Purpose: Used for unconditional jumps, typically for function calls.
-Format: opcode | rd | immediate[20 | 10:1 | 11 | 19:12]
-Fields:
-opcode: Operation type (7 bits)
+### 6. J-Type (Jump)
+- Purpose: Used for unconditional jumps, typically for function calls.
+- Format: opcode | rd | immediate[20 | 10:1 | 11 | 19:12]
+#### Fields:
+- opcode: Operation type (7 bits)
 rd: Register to store the return address (5 bits)
 immediate: 20-bit offset, sign-extended and reordered to specify the jump target address
 
