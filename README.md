@@ -246,6 +246,26 @@ reg 0 sp
 rd: Register to store the return address (5 bits)
 immediate: 20-bit offset, sign-extended and reordered to specify the jump target address.
 
+### Task-2:To Identify 15 unique RISC-V instructions from riscv-objdmp of your application code 
+1. **`addi sp,sp,16`**
+- Instruction Type:I-type (used for immediate arithmetic and load instructions)
+| Field                  | value                 |
+|------------------------|------------           |
+2.**`auipc a5, 0xFFFF0 `**
+3.**`sub a2, a2, a0`**
+4.**`jal ra, 0x102EC `**
+5.**`lw a0, 0(sp) `**
+6.**`lbu a5, 1944(gp) `**
+7.**`bnez a5, 0x1018C `**
+9.**`sd ra, 8(sp) `**
+10.**`xori a5, a5, -2000 `**
+11.**`slli a5, a3, 0x30 `**
+12.**`bqez a5, 101f4 `**
+13.**`bltu a3, a5, 138ac `**
+14.**`ld a3, 16(a2) `**
+15.**`add s1, s0, s1 `**
+
+
 
 
 
