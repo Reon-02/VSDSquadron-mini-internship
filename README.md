@@ -265,7 +265,7 @@ immediate: 20-bit offset, sign-extended and reordered to specify the jump target
 ### To Identify exact 32-bit instruction code in the instruction type format for 15 unique instructions
 ### Task: To Identify Exact 32-Bit Instruction Code in Instruction Type Format
 
-| #   | Instruction              | Instruction Type | 32-bit Instruction Code | Explanation                                  |
+|SL no  | Instruction              | Instruction Type | 32-bit Instruction Code | Explanation                                  |
 |-----|--------------------------|------------------|--------------------------|----------------------------------------------|
 | 1   | `addi sp, sp, 16`        | I-type           | `0x00108093`             | Adds an immediate value to the stack pointer |
 | 2   | `auipc a5, 0xFFFF0`      | U-type           | `0xFFFF0801`             | Adjusts upper immediate to a5               |
