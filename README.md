@@ -248,9 +248,9 @@ immediate: 20-bit offset, sign-extended and reordered to specify the jump target
 
 ### Task-2:To Identify 15 unique RISC-V instructions from riscv-objdmp of your application code 
 1. **`addi sp,sp,16`**
-- Instruction Type:I-type (used for immediate arithmetic and load instructions)
+- Instruction Type:I-type (used for immediate arithmetic and load instructions)<br>
 | Column 1 |  | Column 3 |
-|----------|----------   |
+|----------|-------------|
 | Data 1   |  Data 3     |
 | Data 4   |  Data 6     |
 # Field       Value                                      
