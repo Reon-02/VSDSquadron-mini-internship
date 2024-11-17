@@ -247,7 +247,7 @@ rd: Register to store the return address (5 bits)
 immediate: 20-bit offset, sign-extended and reordered to specify the jump target address.
 
 ### Task-2:To Identify 15 unique RISC-V instructions from riscv-objdmp of your application code 
-1. **`addi sp,sp,16`**<br>
+1.**`addi sp,sp,16`**<br>
 2.**`auipc a5, 0xFFFF0 `** <br>
 3.**`sub a2, a2, a0`**<br>
 4.**`jal ra, 0x102EC `**<br>
