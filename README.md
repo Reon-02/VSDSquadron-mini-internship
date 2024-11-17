@@ -248,17 +248,7 @@ immediate: 20-bit offset, sign-extended and reordered to specify the jump target
 
 ### Task-2:To Identify 15 unique RISC-V instructions from riscv-objdmp of your application code 
 1. **`addi sp,sp,16`**
-| Field      | Value                               |
-|------------|-------------------------------------|
-| opcode     | 0010011 (for I-type arithmetic)     |
-| funct3     | 000 (for addi)                      |
-| rd         | sp (x2)                             |
-| rs1        | sp (x2)                             |
-| imm[11:0]  | 16 (0x0010) in 12-bit signed format |
-   
-
-2.**`auipc a5, 0xFFFF0 `**
-  
+2.**`auipc a5, 0xFFFF0 `** 
 3.**`sub a2, a2, a0`**
 4.**`jal ra, 0x102EC `**
 5.**`lw a0, 0(sp) `**
@@ -271,7 +261,26 @@ immediate: 20-bit offset, sign-extended and reordered to specify the jump target
 13.**`bltu a3, a5, 138ac `**
 14.**`ld a3, 16(a2) `**
 15.**`add s1, s0, s1 `**
-## Task
+## Task-3
+### To Identify exact 32-bit instruction code in the instruction type format for 15 unique instructions
+### Task: To Identify Exact 32-Bit Instruction Code in Instruction Type Format
+
+| #   | Instruction              | Instruction Type | 32-bit Instruction Code | Explanation                                  |
+|-----|--------------------------|------------------|--------------------------|----------------------------------------------|
+| 1   | `addi sp, sp, 16`        | I-type           | `0x00108093`             | Adds an immediate value to the stack pointer |
+| 2   | `auipc a5, 0xFFFF0`      | U-type           | `0xFFFF0801`             | Adjusts upper immediate to a5               |
+| 3   | `sub a2, a2, a0`         | R-type           | `0x40A30333`             | Subtracts a0 from a2                        |
+| 4   | `jal ra, 0x102EC`        | J-type           | `0x102EC06F`             | Jump and link to an address                 |
+| 5   | `lw a0, 0(sp)`           | I-type           | `0x00010083`             | Load word from stack pointer                |
+| 6   | `lbu a5, 1944(gp)`       | I-type           | `0x79858103`             | Load unsigned byte from gp+1944             |
+| 7   | `bnez a5, 0x1018C`       | B-type           | `0xF8E58063`             | Branch if a5 is not zero                    |
+| 8   | `sd ra, 8(sp)`           | S-type           | `0x00E12023`             | Store double-word from ra to sp+8           |
+| 9   | `xori a5, a5, -2000`     | I-type           | `0xFFFF8033`             | XOR immediate with a5                       |
+| 10  | `slli a5, a3, 0x30`      | R-type           | `0x03035013`             | Shift left logical immediate on a5          |
+| 11  | `bqez a5, 101F4`         | B-type           | `0x00128063`             | Branch if equal to zero                     |
+| 12  | `bltu a3, a5, 138AC`     | B-type           | `0x02F38063`             | Branch if less than unsigned                |
+| 13  | `ld a3, 16(a2)`          | I-type           | `0x01030303`             | Load double-word from memory                |
+| 14  | `add s1, s0, s1`         | R-type           | `0x00308233`             | Add s1 and s0                               |
 
 
 
